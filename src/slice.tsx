@@ -75,7 +75,7 @@ const loginUser = createAsyncThunk(
 
 const fetchCurrentUser = createAsyncThunk(
     "auth/fetchCurrentUser",
-    async (_, { rejectWithValue, fulfillWithValue }) => {
+    async (_, { rejectWithValue }) => {
         try {
             const res = await api.get("/users/me");
             return res.data;

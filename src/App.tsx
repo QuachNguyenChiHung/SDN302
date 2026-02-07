@@ -1,4 +1,4 @@
-import { useEffect, type PropsWithChildren, type ReactNode, useCallback, memo } from 'react';
+import { useEffect, type PropsWithChildren, memo } from 'react';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { ChiHungAppDispatch, ChiHungAppSelector } from './ultis/hook';
 import { fetchCurrentUser } from './slice';
