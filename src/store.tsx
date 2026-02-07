@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import reducer from "./slice";
 const store = configureStore({
     reducer: reducer,
-    devTools: process.env.NODE_ENV !== 'production',
+    devTools: import.meta.env.MODE !== 'production',
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({
             serializableCheck: {
