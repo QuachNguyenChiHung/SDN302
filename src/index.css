@@ -1,0 +1,15 @@
+.input-group {
+  border: 1px solid black;
+}
+
+.form-control {
+  border-left: 1px solid black !important;
+}
+
+.navbar * {
+  pointer-events: auto;
+}
+
+.form-check-input {
+  border: 1px solid black;
+}
