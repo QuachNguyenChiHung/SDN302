@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
-import QuizAttemptService from '../services/QuizAttemptService.ts';
-import QuestionService from '../services/QuestionService.ts';
-import QuizService from '../services/QuizService.ts';
+import QuizAttemptService from '../services/QuizAttemptService.js';
+import QuestionService from '../services/QuestionService.js';
+import QuizService from '../services/QuizService.js';
 
 interface AnswerInput {
     questionId: string;

@@ -1,4 +1,4 @@
-import UserRepo from "../repository/UserRepo.ts";
+import UserRepo from "../repository/UserRepo.js";
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 class AuthService {

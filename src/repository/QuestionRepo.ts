@@ -1,4 +1,4 @@
-import Question from "../model/Question.ts";
+import Question from "../model/Question.js";
 
 class QuestionRepo {
     // Create

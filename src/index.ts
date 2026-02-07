@@ -4,10 +4,10 @@ import dotenv from 'dotenv';
 import type { Errback, Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser'
-import userRoute from './controller/UserRoute.ts';
-import quizRoute from './controller/QuizRoute.ts';
-import quizAttemptRoute from './controller/QuizAttemptRoute.ts';
-import questionRoute from './controller/QuestionRoute.ts';
+import userRoute from './controller/UserRoute.js';
+import quizRoute from './controller/QuizRoute.js';
+import quizAttemptRoute from './controller/QuizAttemptRoute.js';
+import questionRoute from './controller/QuestionRoute.js';
 
 dotenv.config();
 

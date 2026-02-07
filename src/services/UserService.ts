@@ -1,4 +1,4 @@
-import UserRepo from "../repository/UserRepo.ts";
+import UserRepo from "../repository/UserRepo.js";
 import bcrypt from 'bcrypt'
 class UserService {
     // Create a new user

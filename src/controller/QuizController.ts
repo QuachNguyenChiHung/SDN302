@@ -1,6 +1,6 @@
 import type { Request, Response } from 'express';
-import QuizService from '../services/QuizService.ts';
-import QuestionService from '../services/QuestionService.ts';
+import QuizService from '../services/QuizService.js';
+import QuestionService from '../services/QuestionService.js';
 
 /**
  * GET /api/quizzes

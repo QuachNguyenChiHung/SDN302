@@ -1,4 +1,4 @@
-import QuizRepo from "../repository/QuizRepo.ts";
+import QuizRepo from "../repository/QuizRepo.js";
 
 class QuizService {
     // Create a new quiz

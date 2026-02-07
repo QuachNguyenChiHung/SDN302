@@ -1,4 +1,4 @@
-import QuestionRepo from "../repository/QuestionRepo.ts";
+import QuestionRepo from "../repository/QuestionRepo.js";
 
 class QuestionService {
     // Create a new question

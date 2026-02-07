@@ -1,6 +1,6 @@
 import type { Request, Response } from 'express';
-import UserService from '../services/UserService.ts';
-import AuthService from '../services/AuthService.ts';
+import UserService from '../services/UserService.js';
+import AuthService from '../services/AuthService.js';
 
 /**
  * POST /api/users/login

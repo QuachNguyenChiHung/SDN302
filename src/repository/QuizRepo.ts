@@ -1,4 +1,4 @@
-import Quiz from "../model/Quiz.ts";
+import Quiz from "../model/Quiz.js";
 class QuizRepo {
     // Create
     async create(data: any) {

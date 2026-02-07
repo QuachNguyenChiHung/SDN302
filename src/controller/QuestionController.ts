@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
-import QuestionService from '../services/QuestionService.ts';
-import QuizService from '../services/QuizService.ts';
-import Quiz from '../model/Quiz.ts';
+import QuestionService from '../services/QuestionService.js';
+import QuizService from '../services/QuizService.js';
+import Quiz from '../model/Quiz.js';
 
 /**
  * GET /api/quizzes/:quizId/questions

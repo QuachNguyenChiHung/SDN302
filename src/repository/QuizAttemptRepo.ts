@@ -1,4 +1,4 @@
-import QuizAttempt from "../model/QuizAttempt.ts";
+import QuizAttempt from "../model/QuizAttempt.js";
 
 class QuizAttemptRepo {
     // Create

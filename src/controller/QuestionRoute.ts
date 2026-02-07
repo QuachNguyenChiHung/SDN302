@@ -1,7 +1,7 @@
 import { Router } from "express";
-import QuestionService from "../services/QuestionService.ts";
-import { verifyToken, optionalAuth } from "../middleware/auth.ts";
-import { requireRole } from "../middleware/roleCheck.ts";
+import QuestionService from "../services/QuestionService.js";
+import { verifyToken, optionalAuth } from "../middleware/auth.js";
+import { requireRole } from "../middleware/roleCheck.js";
 
 const questionRoute = Router();
 

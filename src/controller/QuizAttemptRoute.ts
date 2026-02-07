@@ -1,7 +1,7 @@
 import { Router } from "express";
-import QuizAttemptService from "../services/QuizAttemptService.ts";
-import { verifyToken } from "../middleware/auth.ts";
-import { requireRole } from "../middleware/roleCheck.ts";
+import QuizAttemptService from "../services/QuizAttemptService.js";
+import { verifyToken } from "../middleware/auth.js";
+import { requireRole } from "../middleware/roleCheck.js";
 
 const quizAttemptRoute = Router();
 

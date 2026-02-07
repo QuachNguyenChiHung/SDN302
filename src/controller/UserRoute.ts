@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { login, register, getMe, logout } from "./UserController.ts";
-import { listMyAttempts } from "./QuizAttemptController.ts";
-import { verifyToken } from "../middleware/auth.ts";
+import { login, register, getMe, logout } from "./UserController.js";
+import { listMyAttempts } from "./QuizAttemptController.js";
+import { verifyToken } from "../middleware/auth.js";
 
 const userRoute = Router();
 

@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { listQuizzes, getQuiz, createQuiz, updateQuiz, deleteQuiz, searchQuizzes } from "./QuizController.ts";
-import { listQuestions, createQuestion, updateQuestion, deleteQuestion, getQuestion } from "./QuestionController.ts";
-import { createAttempt, getAttempt, listAttempts } from "./QuizAttemptController.ts";
-import { verifyToken, optionalAuth } from "../middleware/auth.ts";
-import { requireRole } from "../middleware/roleCheck.ts";
+import { listQuizzes, getQuiz, createQuiz, updateQuiz, deleteQuiz, searchQuizzes } from "./QuizController.js";
+import { listQuestions, createQuestion, updateQuestion, deleteQuestion, getQuestion } from "./QuestionController.js";
+import { createAttempt, getAttempt, listAttempts } from "./QuizAttemptController.js";
+import { verifyToken, optionalAuth } from "../middleware/auth.js";
+import { requireRole } from "../middleware/roleCheck.js";
 
 const quizRoute = Router();
 
