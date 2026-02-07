@@ -1,2 +1,2 @@
-import demo from '../src/app.js'
-export default demo;
+import app from '../src/index.js'
+export default app;

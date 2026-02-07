@@ -18,22 +18,21 @@ app.use(cookieParser(COOKIE_SECRET)); // Enable signed cookies
 app.use(express.json());
 app.use(cors({ origin: process.env.FE || 'http://localhost:5173', credentials: true }));
 app.use(express.urlencoded({ extended: true }));
-const tme = process.env.DB_URL || 'sds';
-(
-    async () => {
-        try {
-            await mongoose.connect(process.env.DB_URL || 'mongodb://localhost:27017/', {
-                dbName: process.env.DB_NAME || 'EX4'
-            });
-            app.listen(3000, () => {
-                console.log("runningn");
-            });
-        } catch (error) {
-            console.log(error);
-            process.exit(1);
-        }
-    }
-)();
+// Connect to MongoDB
+mongoose.connect(process.env.DB_URL || 'mongodb://localhost:27017/', {
+    dbName: process.env.DB_NAME || 'EX4'
+}).then(() => {
+    console.log('Connected to MongoDB');
+}).catch((error) => {
+    console.log('MongoDB connection error:', error);
+});
+
+// Only start server if not in serverless environment
+if (process.env.VERCEL !== '1') {
+    app.listen(3000, () => {
+        console.log('Server running on port 3000');
+    });
+}
 app.get("/", (req: Request, res: Response) => {
     res.send("Hello World!");
 });
