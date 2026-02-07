@@ -45,3 +45,4 @@ app.use((err: Errback, req: Request, res: Response, next: NextFunction) => {
     console.error(err);
     return res.status(500).json({ msg: "Internal Server Error" });
 });
+export default app;
