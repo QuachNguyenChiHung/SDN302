@@ -25,9 +25,9 @@ const tme = process.env.DB_URL || 'sds';
             await mongoose.connect(process.env.DB_URL || 'mongodb://localhost:27017/', {
                 dbName: process.env.DB_NAME || 'EX4'
             });
-            app.listen(3000, () => {
-                console.log("runningn");
-            });
+            // app.listen(3000, () => {
+            //     console.log("runningn");
+            // });
         } catch (error) {
             console.log(error);
             process.exit(1);

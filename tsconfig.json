@@ -9,6 +9,7 @@
     "module": "nodenext",
     "target": "esnext",
     "types": [],
+    "declaration": false,
     "moduleResolution": "node16",
     // For nodejs:
     // "lib": ["esnext"],
