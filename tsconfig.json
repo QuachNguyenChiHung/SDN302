@@ -3,7 +3,6 @@
   "compilerOptions": {
     // File Layout
     "rootDir": "./src",
-    "outDir": "./api",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
