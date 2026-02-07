@@ -16,7 +16,7 @@ const COOKIE_SECRET = process.env.COOKIE_SECRET || 'super-secret-cookie-key';
 const app = express();
 app.use(cookieParser(COOKIE_SECRET)); // Enable signed cookies
 app.use(express.json());
-app.use(cors({ origin: process.env.FE||'http://localhost:5173', credentials: true }));
+app.use(cors({ origin: process.env.FE || 'http://localhost:5173', credentials: true }));
 app.use(express.urlencoded({ extended: true }));
 const tme = process.env.DB_URL || 'sds';
 (
@@ -34,6 +34,9 @@ const tme = process.env.DB_URL || 'sds';
         }
     }
 )();
+app.get("/", (req: Request, res: Response) => {
+    res.send("Hello World!");
+});
 app.use("/api/users", userRoute);
 app.use("/api/quizzes", quizRoute);
 app.use("/api/quizAttempts", quizAttemptRoute);
