@@ -17,7 +17,8 @@
     // and npm install -D @types/node
     // Other Outputs
     "allowImportingTsExtensions": true,
-    "emitDeclarationOnly": true,
+    "noEmit": true,
+    "emitDeclarationOnly": false,
     "sourceMap": true,
     "erasableSyntaxOnly": true,
     "declaration": true,
